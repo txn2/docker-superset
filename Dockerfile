@@ -88,6 +88,7 @@ RUN groupadd supergroup && \
     apt-get clean && \
     tar xzf superset.tar.gz && \
     pip install Cython==0.29.21 && \
+    pip install flask_oidc \
     pip install dist/*.tar.gz -r requirements.txt && \
     rm -rf ./*
 
